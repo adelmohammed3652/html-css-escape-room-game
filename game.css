@@ -1,0 +1,38 @@
+body{
+    background-image: url("OIP.jpg");
+}
+
+#one{
+    background: rgb(0, 27, 39);
+    color: azure;
+    height: 3rem;
+    width: 15rem;
+    margin-top: 7rem;
+}
+#b{
+    background: rgb(0, 27, 39);
+    color: rgb(251, 255, 254);
+    height: 3rem;
+    width: 12rem;
+
+}
+.room1{
+    border-color:black solid ;
+    width: 25rem;
+    color: rgb(0, 0, 0);
+}
+.nav {
+    position: fixed;
+    top: 0;
+    left: 0;
+    background-image: url("OIP.jpg");
+    padding: 10px;
+    width: 80rem;
+}
+
+.room1 {
+    margin-top: 7rem;
+}
+
+
+    
