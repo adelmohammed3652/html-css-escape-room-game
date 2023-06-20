@@ -76,61 +76,18 @@ button4.onclick = function() {
   } else {
     alert("Incorrect");
   }
-  
-  // Check the result and display appropriate message
-  if (result >= 4) {
-    // Clear the screen
-    document.body.innerHTML = '';
-    
-    // Create a black screen
-    var blackScreen = document.createElement('div');
-    blackScreen.style.background = 'black';
-    blackScreen.style.width = '100vw';
-    blackScreen.style.height = '100vh';
-    
-    // Create the options buttons
-    var nextLevelButton = document.createElement('button');
-    nextLevelButton.innerText = 'Continue to Next Level';
-    nextLevelButton.style.margin = '10px';
-    nextLevelButton.style.padding = '10px 20px';
-    nextLevelButton.style.backgroundColor = 'green';
-    nextLevelButton.style.color = 'white';
-    nextLevelButton.style.fontSize = '16px';
-    nextLevelButton.onclick = function() {
-      // Logic to move to the next level
-      moveToNextLevel(); // Call your function to handle moving to the next level
-    };
-    
-    var endGameButton = document.createElement('button');
-    endGameButton.innerText = 'End the Game';
-    endGameButton.style.margin = '10px';
-    endGameButton.style.padding = '10px 20px';
-    endGameButton.style.backgroundColor = 'red';
-    endGameButton.style.color = 'white';
-    endGameButton.style.fontSize = '16px';
-    endGameButton.onclick = function() {
-      // Logic to end the game and show celebrating screen
-      showCelebratingScreen(); // Call your function to handle showing the celebrating screen
-    };
-    
-    // Append buttons to the black screen
-    blackScreen.appendChild(nextLevelButton);
-    blackScreen.appendChild(endGameButton);
-    
-    // Append the black screen to the body
-    document.body.appendChild(blackScreen);
-  }
 };
 
-buttonNextLevel.onclick = function() {
-  window.location.href = "D:\Adel Mohammed\coding\coding projects\html css escape room game\level2.html";
-};
-
-function showCelebratingScreen() {
-  // Logic to show the celebrating screen
-  // Add your code here
-  alert('Congratulations! You have completed the game.');
-  window.location.reload();
-
-  // Add more celebrating screen elements as needed
+function toggleDarkLight() {
+  var body = document.getElementById("body");
+  var currentClass = body.className;
+  body.className = currentClass == "dark-mode" ? "light-mode" : "dark-mode";
 }
+
+if (result >= 4) {
+    alert("u have completed the game");
+
+  }else{
+    alert('u failed try again later');
+  }
+

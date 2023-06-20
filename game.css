@@ -1,48 +1,53 @@
-
 body.dark-mode {
-  background-image: url(main.jpg);
-  color: #000000;
+    background-image: url(main.jpg);
+    color: #000000;
   }
+  
   body.dark-mode a {
-  color: #000000;
+    color: #000000;
   }
+  
   body.dark-mode button {
-  background-color: #eee;
-  color: #000000;
+    background-color: #eee;
+    color: #000000;
   }
   
   body.light-mode {
-  background-image: url(R\ \(1\).jpg);
-  color: #ffffff;
+    background-image: url(R\ \(1\).jpg);
+    color: #ffffff;
   }
+  
   body.light-mode a {
-  color: #fff9f9;
+    color: #fff9f9;
   }
+  
   body.light-mode button {
-  background-color: #111;
-  color: #ffffff;
+    background-color: #111;
+    color: #ffffff;
   }
-
-.ans{
+  
+  .ans {
     background: rgb(0, 27, 39);
     color: azure;
     height: 3rem;
     width: 15rem;
     margin-top: 7rem;
-}
-.sub{
+  }
+  
+  .sub {
     background: rgb(0, 27, 39);
     color: rgb(251, 255, 254);
     height: 3rem;
     width: 12rem;
-
-}
-.room1{
-    border-color:black solid ;
+  }
+  
+  .room1 {
+    border-color: black solid;
     width: 25rem;
     color: rgb(0, 0, 0);
-}
-.navbar {
+  }
+  
+  .navbar {
     position: fixed;
     top: 0;
     left: 0;
@@ -52,40 +57,51 @@ body.dark-mode {
     background: transparent;
     z-index: 999;
   }
-
-
-#room1 {
+  
+  #room1 {
     margin-top: 4.5rem;
     width: 25rem;
-
-}
-
-.room2{
+  }
+  
+  .room2 {
     width: 25rem;
     margin-bottom: 3rem;
-}
-::-webkit-scrollbar{
-    background-image: url("OIP.jpg");
-
-}
-.room3{
+  }
+  
+  .room3 {
     width: 25rem;
-}.room4{
+  }
+  
+  .room4 {
     width: 25rem;
     margin-top: 4rem;
-}.room5 {
+  }
+  
+  .room5 {
     width: 25rem;
-    
-}
-::-webkit-scrollbar{
-  background-image: url(main.jpg);
-
-}
-.navbar button{
+  }
+  
+  .navbar button {
     position: absolute;
     top: 0;
     right: 0;
     margin-right: 5rem;
     margin-top: 0.5rem;
-}
-
+  }
+  
+  /* Scrollbar styles */
+  ::-webkit-scrollbar {
+    width: 12px;
+    background-image: url(main.jpg);
+  }
+  
+  ::-webkit-scrollbar-thumb {
+    background-color: rgba(0, 0, 0, 0.5);
+    border-radius: 10px;
+  }
+  
+  ::-webkit-scrollbar-track {
+    background-color: rgba(255, 255, 255, 0.1);
+    border-radius: 10px;
+  }
+  
