@@ -5,54 +5,45 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Escape Room</title>
     <link rel="stylesheet" href="game.css">
-    <link rel="shortcut icon" href="_c9101291-9d00-49a4-b869-472004af753f.png" type="image/x-icon">
+    <link rel="shortcut icon" href="logo.jpg" type="image/x-icon">
 </head>
-<body>
-    <div class="nav">
+<body id="body" class="dark-mode">
+    <div id="nav" class="navbar">
         <p>Result: <span id="result">0</span></p>
+        <button id="theme-changer" class="sub" type="button" name="dark_light" onclick="toggleDarkLight()" title="Toggle dark/light mode">change theme 
+          
     </div>
-    <div class="room1">
-        <p>"You find yourself in a room filled with various symbols and three doors. Each door has a different symbol above it: a star, a triangle, and a circle. The symbols inside the room are: 1 = ⚡, 2 = ✨, 3 = 🌟, 4 = 🔺, 5 = 🌀, 6 = ⭕, 7 = 🌙, and 8 = 🌈. To unlock the correct door and progress, you must decode the symbol sequence based on their corresponding numbers. Good luck!"</p>
-    </div>
+
+    
+        <p id="room1">"You find yourself in a room filled with various symbols and three doors. Each door has a different symbol above it: a star, a triangle, and a circle. The symbols inside the room are: 1 = ⚡, 2 = ✨, 3 = 🌟, 4 = 🔺, 5 = 🌀, 6 = ⭕, 7 = 🌙, and 8 = 🌈. To unlock the correct door and progress, you must decode the symbol sequence based on their corresponding numbers. Good luck!"</p>
+   
 
     <input type="text" class="ans" id="one" placeholder="Code">
     <input type="button" class="sub" id="b" value="Submit">
-    <h1></h1>
-<!---------------------------------------------------------------------------------------------------------->
-<div class="room2">
-<p>"As you enter the mysterious chamber, you notice a series of paintings on the walls. Three paintings stand out, each with a unique color: purple, orange, and yellow. The paintings depict various animals. The animal-color associations are as follows: 1 = 🐦, 2 = 🦁, 3 = 🐰, 4 = 🦊, 5 = 🐯, 6 = 🦉, 7 = 🐻, and 8 = 🐸. To reveal the secret code and proceed, you must decipher the animal sequence corresponding to the colors of the paintings. May your intuition guide you!"</p></div>
 
-<input type="text" class="ans" id="one1" placeholder="Code">
-<input type="button" class="sub" id="b1" value="Submit">
-<!---------------------------------------------------------------------------------------------------------->
-<div class="room3">
-<p>"Welcome to the enigmatic chamber with a shimmering crystal floor. Three pedestals stand before you, each holding a different gemstone: ruby, emerald, and sapphire. The gemstones are linked to a set of symbols. The symbol-gemstone associations are as follows: 1 = ♦️, 2 = 💎, 3 = 🌟, 4 = 💠, 5 = 🔷, 6 = 🔹, 7 = 🌀, and 8 = 🔱. To unlock the chamber's secret, you must determine the symbol sequence corresponding to the gemstones. May your insight illuminate the way!"</p>    </div>
+    <div class="room2">
+        <p id="room2">"As you enter the mysterious chamber, you notice a series of paintings on the walls. Three paintings stand out, each with a unique color: purple, orange, and yellow. The paintings depict various animals. The animal-color associations are as follows: 1 = 🐦, 2 = 🦁, 3 = 🐰, 4 = 🦊, 5 = 🐯, 6 = 🦉, 7 = 🐻, and 8 = 🐸. To reveal the secret code and proceed, you must decipher the animal sequence corresponding to the colors of the paintings. May your intuition guide you!"</p>
+    </div>
+
+    <input type="text" class="ans" id="one1" placeholder="Code">
+    <input type="button" class="sub" id="b1" value="Submit">
+
+    <div class="room3">
+        <p id="room3">"Welcome to the enigmatic third room. It appears to be a library filled with ancient books. Three books catch your attention, each with a different symbol on its cover: a key, an hourglass, and a lock. The books contain various numbers, and each number represents a unique word: 1 = apple, 2 = bridge, 3 = castle, 4 = dragon, 5 = elephant, 6 = forest, 7 = gate, and 8 = horse. To uncover the hidden code and escape this room, you must decipher the word sequence corresponding to the symbols on the books. May knowledge be your guiding light!"</p>
+    </div>
+
     <input type="text" class="ans" id="one2" placeholder="Code">
     <input type="button" class="sub" id="b2" value="Submit">
 
-<!---------------------------------------------------------------------------------------------------------->
-<div class="room4">
-    <p>"You step into a room adorned with ancient hieroglyphs and three engraved statues. Each statue represents a different Egyptian deity: Anubis, Horus, and Ra. The hieroglyphs on the walls depict various objects and creatures. The object- hieroglyph associations are as follows: 1 = 🌿, 2 = 🏺, 3 = 🐍, 4 = 🔆, 5 = 🦅, 6 = 🐞, 7 = 🗿, and 8 = ☀️. To uncover the hidden code and progress, you must decipher the hieroglyph sequence corresponding to the statues. May the ancient symbols guide your path!"</p></div>
-    <input type="text" class="ans" id="one3" placeholder="Code">
-    <input type="button" class="sub" id="b3" value="Submit">
-<!---------------------------------------------------------------------------------------------------------->
-<div class="room5">
-    <p>"Within a chamber, you discover a collection of musical instruments. Three instruments stand out, each emitting a unique sound: flute, drum, and guitar. The instruments are associated with a set of musical notes. The note-instrument associations are as follows: 1 = 🎶, 2 = 🥁, 3 = 🎸, 4 = 🎵, 5 = 🎹, 6 = 🎺, 7 = 🎻, and 8 = 🎼. To unlock the chamber's mystery, you must unravel the note sequence corresponding to the instruments. Let the harmony guide your way!"    </p></div>
-    <input type="text" class="ans" id="one4" placeholder="Code">
-    <input type="button" class="sub" id="b4" value="Submit">    
-
-
-
-
-
-
-
-
-
-
-
-    <script src="game.js"></script>
-    <link rel="shortcut icon" href="_c9101291-9d00-49a4-b869-472004af753f.png" type="image/x-icon">
-    
+    <div class="room4">
+        <p id="room4">"You step into a room adorned with ancient hieroglyphs and three engraved statues. Each statue represents a different Egyptian deity: Anubis, Horus, and Ra. The hieroglyphs on the walls depict various objects and creatures. The object- hieroglyph associations are as follows: 1 = 🌿, 2 = 🏺, 3 = 🐍, 4 = 🔆, 5 = 🦅, 6 = 🐞, 7 = 🗿, and 8 = ☀️. To uncover the hidden code and progress, you must decipher the hieroglyph sequence corresponding to the statues. May the ancient symbols guide your path!"</p></div>
+        <input type="text" class="ans" id="one3" placeholder="Code">
+        <input type="button" class="sub" id="b3" value="Submit">
+    <!---------------------------------------------------------------------------------------------------------->
+    <div class="room5">
+        <p id="room5">"Within a chamber, you discover a collection of musical instruments. Three instruments stand out, each emitting a unique sound: flute, drum, and guitar. The instruments are associated with a set of musical notes. The note-instrument associations are as follows: 1 = 🎶, 2 = 🥁, 3 = 🎸, 4 = 🎵, 5 = 🎹, 6 = 🎺, 7 = 🎻, and 8 = 🎼. To unlock the chamber's mystery, you must unravel the note sequence corresponding to the instruments. Let the harmony guide your way!"    </p></div>
+        <input type="text" class="ans" id="one4" placeholder="Code">
+        <input type="button" class="sub" id="b4" value="Submit">
+        <script src="game.js"></script> 
 </body>
 </html>
